@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'game.dart';
 import 'package:hackathon/calculate/fitness.dart';
 import 'package:hackathon/mainPage/main2.dart';
+import 'package:hackathon/tracker/track.dart';
 
 
 void main()
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget
         FitnessScreen.id:(context) => FitnessScreen(),
         GameScreen.id:(context) => GameScreen(),
         MainScreen.id:(context) => MainScreen(),
+        TrackScreen.id:(context) => TrackScreen(),
       },
     );
 

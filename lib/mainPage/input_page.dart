@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackathon/mainPage/reusable.dart';
 import 'icon_content.dart';
 import 'package:hackathon/calculate/fitness.dart';
+import 'package:hackathon/tracker/track.dart';
 
 import 'package:hackathon/HomePage.dart';
 import 'package:hackathon/game.dart';
@@ -131,7 +132,7 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FitnessScreen()),
+                            MaterialPageRoute(builder: (context) => TrackScreen()),
                           );
                         },
                       ),
