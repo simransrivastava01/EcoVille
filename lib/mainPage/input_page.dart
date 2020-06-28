@@ -35,8 +35,6 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: Row(
               children: <Widget>[
-                //new Image.asset("images/coronavirus.jpeg"),
-                new Image.asset("images/covid.jpeg"),
                 Expanded(
                   child: GestureDetector(
 //                    onTap: () {
