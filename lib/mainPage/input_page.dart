@@ -35,32 +35,43 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: GestureDetector(
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'BMI CALCULATOR',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.red,
+                            fontFamily: 'Pacifico'),
+                      ),
+                      GestureDetector(
 //                    onTap: () {
 //                      print("heyya");
 //                    },
 
-                    child: ReusableCard(
-                      colour: card1,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(
-                          Icons.healing,
-                          color: Colors.red,
+                        child: ReusableCard(
+                          colour: card1,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(
+                              Icons.healing,
+                              color: Colors.red,
+                            ),
+                            iconSize: 80,
+                            color: Colors.white,
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => FitnessScreen()),
+                              );
+                            },
+                          ),
                         ),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FitnessScreen()),
-                          );
-                        },
                       ),
-                    ),
+                    ],
                   ),
                 ),
                 Expanded(
