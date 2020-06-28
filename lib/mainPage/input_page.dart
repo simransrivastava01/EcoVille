@@ -5,7 +5,6 @@ import 'package:hackathon/tracker/track.dart';
 import 'package:hackathon/CovidQuiz/MainQuiz.dart';
 import 'package:hackathon/game.dart';
 
-
 const activeCardColor = Color(0xFF1D1E33);
 const inactiveCardColor = Color(0xFF1D1E28);
 
@@ -29,7 +28,7 @@ class _InputPageState extends State<InputPage> {
         title: Text('Ecoville'),
         centerTitle: true,
       ),
-     // backgroundColor: Colors.red,
+      // backgroundColor: Colors.red,
       body: Column(
         children: <Widget>[
           Expanded(
@@ -44,8 +43,11 @@ class _InputPageState extends State<InputPage> {
                     child: ReusableCard(
                       colour: card1,
                       cardChild: IconButton(
-                      //label: '1',
-                        icon: new Icon(Icons.account_circle ),
+                        //label: '1',
+                        icon: new Icon(
+                          Icons.healing,
+                          color: Colors.red,
+                        ),
                         iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
@@ -53,12 +55,11 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FitnessScreen()),
+                            MaterialPageRoute(
+                                builder: (context) => FitnessScreen()),
                           );
                         },
-                    ),
-
-
+                      ),
                     ),
                   ),
                 ),
@@ -69,7 +70,10 @@ class _InputPageState extends State<InputPage> {
                       colour: card2,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle ),
+                        icon: new Icon(
+                          Icons.games,
+                          color: Colors.lightBlueAccent,
+                        ),
                         iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
@@ -77,11 +81,11 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => GameScreen()),
+                            MaterialPageRoute(
+                                builder: (context) => GameScreen()),
                           );
                         },
                       ),
-
                     ),
                   ),
                 ),
@@ -98,7 +102,10 @@ class _InputPageState extends State<InputPage> {
                       colour: card3,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle ),
+                        icon: new Icon(
+                          Icons.new_releases,
+                          color: Colors.yellow,
+                        ),
                         iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
@@ -106,11 +113,11 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => TrackScreen()),
+                            MaterialPageRoute(
+                                builder: (context) => TrackScreen()),
                           );
                         },
                       ),
-
                     ),
                   ),
                 ),
@@ -121,7 +128,10 @@ class _InputPageState extends State<InputPage> {
                       colour: card4,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle ),
+                        icon: new Icon(
+                          Icons.question_answer,
+                          color: Colors.lightGreenAccent,
+                        ),
                         iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
@@ -129,11 +139,11 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => MainQuizScreen()),
+                            MaterialPageRoute(
+                                builder: (context) => MainQuizScreen()),
                           );
                         },
                       ),
-
                     ),
                   ),
                 ),
@@ -150,7 +160,7 @@ class _InputPageState extends State<InputPage> {
                       colour: card5,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle ),
+                        icon: new Icon(Icons.account_circle),
                         iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
@@ -158,34 +168,11 @@ class _InputPageState extends State<InputPage> {
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FitnessScreen()),
+                            MaterialPageRoute(
+                                builder: (context) => FitnessScreen()),
                           );
                         },
                       ),
-
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: GestureDetector(
-                    //onTap: () {},
-                    child: ReusableCard(
-                      colour: card6,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(Icons.account_circle ),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => FitnessScreen()),
-                          );
-                        },
-                      ),
-
                     ),
                   ),
                 ),

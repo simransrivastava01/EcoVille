@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reusable_dart.dart';
 import 'icon_content.dart';
 
@@ -38,6 +39,7 @@ class _InputPageState extends State<InputPage> {
                       colour: card1,
                       cardChild: IconContent(
                         label: '1',
+                        icon: FontAwesomeIcons.question,
                       ),
                     ),
                   ),
