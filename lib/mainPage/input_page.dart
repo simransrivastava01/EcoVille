@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon/mainPage/reusable.dart';
 import 'package:hackathon/calculate/fitness.dart';
+import 'package:hackathon/precaution/pre.dart';
 import 'package:hackathon/tracker/track.dart';
 import 'package:hackathon/CovidQuiz/MainQuiz.dart';
 import 'package:hackathon/game.dart';
@@ -160,16 +161,16 @@ class _InputPageState extends State<InputPage> {
                       colour: card5,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle),
+                        icon: new Icon(Icons.favorite),
                         iconSize: 80,
-                        color: Colors.white,
+                        color: Colors.pink,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
                           //child: SelectionButton();
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => FitnessScreen()),
+                                builder: (context) => PrecautionScreen()),
                           );
                         },
                       ),

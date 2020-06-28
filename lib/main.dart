@@ -5,6 +5,7 @@ import 'package:hackathon/calculate/fitness.dart';
 import 'package:hackathon/mainPage/main2.dart';
 import 'package:hackathon/tracker/track.dart';
 import 'package:hackathon/CovidQuiz/MainQuiz.dart';
+import 'package:hackathon/precaution/pre.dart';
 
 
 void main()
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget
         MainScreen.id:(context) => MainScreen(),
         TrackScreen.id:(context) => TrackScreen(),
         MainQuizScreen.id:(context) => MainQuizScreen(),
+        PrecautionScreen.id:(context) => PrecautionScreen(),
       },
     );
 
