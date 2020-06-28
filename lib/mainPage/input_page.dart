@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon/mainPage/reusable.dart';
-import 'icon_content.dart';
 import 'package:hackathon/calculate/fitness.dart';
 import 'package:hackathon/tracker/track.dart';
-
-import 'package:hackathon/HomePage.dart';
+import 'package:hackathon/CovidQuiz/MainQuiz.dart';
 import 'package:hackathon/game.dart';
-import 'package:hackathon/mainPage/main2.dart';
-
-
-import 'package:hackathon/calculate/bmi_calculator.dart';
-import 'package:hackathon/calculate/routes.dart';
-import 'package:hackathon/calculate/input_card.dart';
-import 'package:hackathon/calculate/result_page.dart';
 
 
 const activeCardColor = Color(0xFF1D1E33);
@@ -38,35 +29,20 @@ class _InputPageState extends State<InputPage> {
         title: Text('Ecoville'),
         centerTitle: true,
       ),
+     // backgroundColor: Colors.red,
       body: Column(
         children: <Widget>[
           Expanded(
             child: Row(
               children: <Widget>[
-//                Expanded(
-//                    child: Padding(
-//                        padding: const EdgeInsets.all(8.0),
-//                        child: SelectionButton()
-//                    )
-//                ),
-//                new IconButton(
-//                  icon: new Icon(Icons.account_circle ),
-//                  iconSize: 50,
-//                  color: Colors.white,
-//                  onPressed: () {
-//                    //Navigator.pushNamed(context, RegistrationScreen.id);
-//                    //child: SelectionButton();
-//                    Navigator.push(
-//                      context,
-//                      MaterialPageRoute(builder: (context) => FitnessScreen()),
-//                    );
-//                  },
-//                ),
+                //new Image.asset("images/coronavirus.jpeg"),
+                new Image.asset("images/covid.jpeg"),
                 Expanded(
                   child: GestureDetector(
 //                    onTap: () {
 //                      print("heyya");
 //                    },
+
                     child: ReusableCard(
                       colour: card1,
                       cardChild: IconButton(
@@ -96,7 +72,7 @@ class _InputPageState extends State<InputPage> {
                       cardChild: IconButton(
                         //label: '1',
                         icon: new Icon(Icons.account_circle ),
-                        iconSize: 50,
+                        iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
@@ -125,7 +101,7 @@ class _InputPageState extends State<InputPage> {
                       cardChild: IconButton(
                         //label: '1',
                         icon: new Icon(Icons.account_circle ),
-                        iconSize: 50,
+                        iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
@@ -148,14 +124,14 @@ class _InputPageState extends State<InputPage> {
                       cardChild: IconButton(
                         //label: '1',
                         icon: new Icon(Icons.account_circle ),
-                        iconSize: 50,
+                        iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
                           //child: SelectionButton();
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FitnessScreen()),
+                            MaterialPageRoute(builder: (context) => MainQuizScreen()),
                           );
                         },
                       ),
@@ -177,7 +153,7 @@ class _InputPageState extends State<InputPage> {
                       cardChild: IconButton(
                         //label: '1',
                         icon: new Icon(Icons.account_circle ),
-                        iconSize: 50,
+                        iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
@@ -200,7 +176,7 @@ class _InputPageState extends State<InputPage> {
                       cardChild: IconButton(
                         //label: '1',
                         icon: new Icon(Icons.account_circle ),
-                        iconSize: 50,
+                        iconSize: 80,
                         color: Colors.white,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
