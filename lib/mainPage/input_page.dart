@@ -199,26 +199,37 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: ReusableCard(
-                      colour: card5,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(Icons.account_circle),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FitnessScreen()),
-                          );
-                        },
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'PRECAUTIONS',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.purpleAccent,
+                            fontFamily: 'Pacifico'),
                       ),
-                    ),
+                      GestureDetector(
+                        onTap: () {},
+                        child: ReusableCard(
+                          colour: card5,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(Icons.save),
+                            iconSize: 80,
+                            color: Colors.purpleAccent,
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => FitnessScreen()),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(
