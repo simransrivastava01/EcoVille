@@ -233,26 +233,30 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ),
                 Expanded(
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: ReusableCard(
-                      colour: card5,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(Icons.people),
-                        iconSize: 80,
-                        color: Colors.deepOrange,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FitnessScreen()),
-                          );
-                        },
+                  child: Column(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {},
+                        child: ReusableCard(
+                          colour: card5,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(Icons.people),
+                            iconSize: 80,
+                            color: Colors.deepOrange,
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => FitnessScreen()),
+                              );
+                            },
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
               ],
