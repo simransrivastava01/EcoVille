@@ -96,55 +96,78 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: ReusableCard(
-                      colour: card3,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(
-                          Icons.new_releases,
-                          color: Colors.yellow,
-                        ),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => TrackScreen()),
-                          );
-                        },
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'CORONA  TRACKER',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.yellow,
+                            fontFamily: 'Pacifico'),
                       ),
-                    ),
+                      GestureDetector(
+                        onTap: () {},
+                        child: ReusableCard(
+                          colour: card3,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(
+                              Icons.new_releases,
+                              color: Colors.yellow,
+                            ),
+                            iconSize: 80,
+                            color: Colors.white,
+
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TrackScreen()),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: ReusableCard(
-                      colour: card4,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(
-                          Icons.question_answer,
-                          color: Colors.lightGreenAccent,
-                        ),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => MainQuizScreen()),
-                          );
-                        },
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'QUIZ',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.greenAccent,
+                            fontFamily: 'Pacifico'),
                       ),
-                    ),
+                      GestureDetector(
+                        onTap: () {},
+                        child: ReusableCard(
+                          colour: card4,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(
+                              Icons.question_answer,
+                              color: Colors.lightGreenAccent,
+                            ),
+                            iconSize: 80,
+                            color: Colors.white,
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MainQuizScreen()),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
