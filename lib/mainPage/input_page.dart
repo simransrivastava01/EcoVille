@@ -235,6 +235,13 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: Column(
                     children: <Widget>[
+                      Text(
+                        'ABOUT US',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.deepOrange,
+                            fontFamily: 'Pacifico'),
+                      ),
                       GestureDetector(
                         onTap: () {},
                         child: ReusableCard(
