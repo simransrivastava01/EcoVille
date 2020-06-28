@@ -239,9 +239,9 @@ class _InputPageState extends State<InputPage> {
                       colour: card5,
                       cardChild: IconButton(
                         //label: '1',
-                        icon: new Icon(Icons.account_circle),
+                        icon: new Icon(Icons.people),
                         iconSize: 80,
-                        color: Colors.white,
+                        color: Colors.deepOrange,
                         onPressed: () {
                           //Navigator.pushNamed(context, RegistrationScreen.id);
                           //child: SelectionButton();
