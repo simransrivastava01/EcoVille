@@ -75,29 +75,40 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ),
                 Expanded(
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: ReusableCard(
-                      colour: card2,
-                      cardChild: IconButton(
-                        //label: '1',
-                        icon: new Icon(
-                          Icons.games,
-                          color: Colors.lightBlueAccent,
-                        ),
-                        iconSize: 80,
-                        color: Colors.white,
-                        onPressed: () {
-                          //Navigator.pushNamed(context, RegistrationScreen.id);
-                          //child: SelectionButton();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => GameScreen()),
-                          );
-                        },
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'GAME',
+                        style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.blue,
+                            fontFamily: 'Pacifico'),
                       ),
-                    ),
+                      GestureDetector(
+                        onTap: () {},
+                        child: ReusableCard(
+                          colour: card2,
+                          cardChild: IconButton(
+                            //label: '1',
+                            icon: new Icon(
+                              Icons.games,
+                              color: Colors.lightBlueAccent,
+                            ),
+                            iconSize: 80,
+                            color: Colors.white,
+                            onPressed: () {
+                              //Navigator.pushNamed(context, RegistrationScreen.id);
+                              //child: SelectionButton();
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => GameScreen()),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
