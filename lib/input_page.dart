@@ -31,7 +31,7 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: GestureDetector(
+                  child: GestureDetector( 
                     onTap: () {
                       //print("heyya");
                     },
