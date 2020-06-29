@@ -21,12 +21,12 @@ class _PrecautionScreenState extends State<PrecautionScreen> {
           backgroundColor: Colors.black,
         ),
 
-        backgroundColor: Colors.white, //sets the background color of the screen.
+        backgroundColor: Colors.black, //sets the background color of the screen.
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage("images/precaution.jpg"),
-              fit: BoxFit.cover,
+              //fit: BoxFit.cover,
             ),
           ),
           //child: HomePage(),
