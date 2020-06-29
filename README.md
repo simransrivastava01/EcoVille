@@ -1,16 +1,9 @@
 # hackathon
 
-A new Flutter application.
+To update people with the latest corona virus stats across different countries and to encourage them to check on their mental and physical fitness We have made an app named 'EcoVille'.This App will keep you close to your family which was lost since years................
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+some salient features of our app :
+-! A game to play with ur family ..🖖🔥 .
+-! corona virus tracker
+-! Bmi calculator (to ensure u remain fit during this pandemic, it also calculates your body fat percentage)
+-! Quiz on corona
