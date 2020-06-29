@@ -5,6 +5,7 @@ import 'package:hackathon/tracker/track.dart';
 import 'package:hackathon/CovidQuiz/MainQuiz.dart';
 import 'package:hackathon/game.dart';
 import 'package:hackathon/precaution/pre.dart';
+import 'package:hackathon/aboutUs.dart';
 
 const activeCardColor = Color(0xFF1D1E33);
 const inactiveCardColor = Color(0xFF1D1E28);
@@ -125,7 +126,7 @@ class _InputPageState extends State<InputPage> {
                         'CORONA  TRACKER',
                         style: TextStyle(
                             fontSize: 15.0,
-                            color: Colors.yellow,
+                            color: Colors.purpleAccent,
                             fontFamily: 'Pacifico'),
                       ),
                       GestureDetector(
@@ -135,8 +136,8 @@ class _InputPageState extends State<InputPage> {
                           cardChild: IconButton(
                             //label: '1',
                             icon: new Icon(
-                              Icons.new_releases,
-                              color: Colors.yellow,
+                              Icons.save,
+                              color: Colors.purpleAccent,
                             ),
                             iconSize: 80,
                             color: Colors.white,
@@ -206,7 +207,7 @@ class _InputPageState extends State<InputPage> {
                         'PRECAUTIONS',
                         style: TextStyle(
                             fontSize: 15.0,
-                            color: Colors.purpleAccent,
+                            color: Colors.yellow,
                             fontFamily: 'Pacifico'),
                       ),
                       GestureDetector(
@@ -215,16 +216,16 @@ class _InputPageState extends State<InputPage> {
                           colour: card5,
                           cardChild: IconButton(
                             //label: '1',
-                            icon: new Icon(Icons.save),
+                            icon: new Icon(Icons.new_releases),
                             iconSize: 80,
-                            color: Colors.purpleAccent,
+                            color: Colors.yellow,
                             onPressed: () {
                               //Navigator.pushNamed(context, RegistrationScreen.id);
                               //child: SelectionButton();
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => FitnessScreen()),
+                                    builder: (context) => PrecautionScreen()),
                               );
                             },
                           ),
@@ -258,7 +259,7 @@ class _InputPageState extends State<InputPage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PrecautionScreen()),
+                                    builder: (context) => AboutScreen()),
                               );
                             },
                           ),

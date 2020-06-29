@@ -6,6 +6,7 @@ import 'package:hackathon/mainPage/main2.dart';
 import 'package:hackathon/tracker/track.dart';
 import 'package:hackathon/CovidQuiz/MainQuiz.dart';
 import 'package:hackathon/precaution/pre.dart';
+import 'package:hackathon/aboutUs.dart';
 
 
 void main()
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget
         TrackScreen.id:(context) => TrackScreen(),
         MainQuizScreen.id:(context) => MainQuizScreen(),
         PrecautionScreen.id:(context) => PrecautionScreen(),
+        AboutScreen.id:(context) => AboutScreen(),
       },
     );
 
