@@ -18,6 +18,6 @@ class TileModel{
   }
 
   bool getIsSelected(){
-    return isSelected;
+    return isSelected; 
   }
 }
